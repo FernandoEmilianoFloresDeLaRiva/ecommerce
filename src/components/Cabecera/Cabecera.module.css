@@ -1,0 +1,29 @@
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 15px 1px rgb(127, 190, 190);
+    font-weight: bold;
+}
+
+.contenedor div{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+}
+
+.contenedor div button{
+    background-color: rgb(127, 126, 126);
+    border-color: transparent;
+    border-radius: 15px;
+    transition: all 1s;
+}
+
+.contenedor div button:hover{
+    cursor: pointer;
+    background-color: rgb(127, 190, 190);
+    scale: 1.1;
+}

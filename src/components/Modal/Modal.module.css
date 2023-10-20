@@ -1,0 +1,14 @@
+.modal{
+    overflow-y: scroll;
+    position: fixed;
+    top: 1%;
+    bottom: 1%;
+    width: 80%;
+    min-height: 70%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(0,0,0,0.5);
+}
