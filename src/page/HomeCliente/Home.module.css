@@ -1,0 +1,21 @@
+* {
+  text-transform: capitalize;
+}
+
+.home {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3vh;
+}
+
+.home main {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

@@ -1,29 +1,64 @@
-.contenedor{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: 0px 0px 15px 1px rgb(127, 190, 190);
-    font-weight: bold;
+.contenedor {
+  position: fixed;
+  top: 0;
+  padding: 1em 0;
+  width: 100%;
+  min-height: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 15px 1px #7fbebe;
+  background-color: #272727;
+  font-weight: bold;
 }
 
-.contenedor div{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2em;
+.contenedor div {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
 }
 
-.contenedor div button{
-    background-color: rgb(127, 126, 126);
-    border-color: transparent;
-    border-radius: 15px;
-    transition: all 1s;
+.contenedor a {
+  font-weight: 400;
+  font-size: 0.8rem;
+  border: 2px solid rgb(127, 126, 126);
+  background-color: #7f7e7e;
+  color: white;
+  padding: 0 0.6em;
+  transition: all 1s;
+  text-decoration: none;
+  border-radius: 2em;
 }
 
-.contenedor div button:hover{
-    cursor: pointer;
-    background-color: rgb(127, 190, 190);
-    scale: 1.1;
+.contenedor div button {
+  background-color: rgb(127, 126, 126);
+  border-color: transparent;
+  border-radius: 15px;
+  transition: all 1s;
+}
+
+.contenedor div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15.3%;
+  top: 6%;
+  z-index: 1;
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 1%;
+  height: 20%;
+  font-size: 0.8rem;
+  background-color: red;
+  transition: all 1s;
+}
+
+.contenedor div button:hover,
+.contenedor a:hover {
+  cursor: pointer;
+  background-color: rgb(127, 190, 190);
+  scale: 1.1;
 }

@@ -1,14 +1,54 @@
-.modal{
-    overflow-y: scroll;
-    position: fixed;
-    top: 1%;
-    bottom: 1%;
-    width: 80%;
-    min-height: 70%;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: rgb(0,0,0,0.5);
+.modal {
+  border-radius: 1em;
+  overflow-y: scroll;
+  padding: 1em;
+  position: fixed;
+  top: 1%;
+  bottom: 1%;
+  width: 80%;
+  height: 92%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.modal::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  height: 2em;
+  border-radius: 2em;
+  border: 1px solid rgb(0,0,0,0.5);
+  background-color: rgb(127, 190, 190);
+}
+
+.modal i {
+  color: rgb(127, 190, 190);
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right:0.2em;
+  font-size: 3rem;
+  transition: all 1s;
+}
+
+.modal i:hover {
+  animation: 1s cerrar infinite;
+}
+
+@keyframes cerrar {
+  0% {
+    color: rgb(127, 190, 190);
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: rgb(127, 190, 190);
+  }
 }
